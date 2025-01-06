@@ -1,0 +1,36 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "120.85-14.5",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://va.gov/terminology/vistaDefinedTerms",
+            "value": "120.85-14.5"
+        }
+    ],
+    "name": "CSVFallergySeverity",
+    "title": "120.85-14.5",
+    "status": "draft",
+    "experimental": false,
+    "description": "This is the code system for VistaFile-Field 120.85-14.5",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "1",
+            "display": "MILD"
+        },
+        {
+            "code": "2",
+            "display": "MODERATE"
+        },
+        {
+            "code": "3",
+            "display": "SEVERE"
+        }
+    ]
+}

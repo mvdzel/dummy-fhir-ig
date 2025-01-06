@@ -1,0 +1,31 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "Patient",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile",
+            "valueCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+        }
+    ],
+    "url": "http://va.gov/fhir/StructureDefinition/Patient",
+    "name": "Patient",
+    "title": "Patient",
+    "status": "active",
+    "description": "This StructureDefinition contains the maps for VistA file PATIENT (2) to us-core-patient.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Patient",
+    "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Patient.extension:race",
+                "path": "Patient.extension",
+                "sliceName": "race",
+                "mustSupport": true
+            }
+        ]
+    }
+}

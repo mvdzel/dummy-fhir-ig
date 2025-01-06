@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "draft",
+    "name": "VF_allergySeverity",
+    "id": "VSVFallergySeverity",
+    "title": "VF_allergySeverity",
+    "description": "Source ValueSet for Terminology Maps VF_allergySeverity",
+    "experimental": false,
+    "compose": {
+      "include": [
+        {
+          "system": "http://va.gov/fhir/CodeSystem/120.85-14.5"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,36 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "SmokingStatus",
+    "id": "SmokingStatus",
+    "title": "SmokingStatus FHIR",
+    "description": "FHIR Target ValueSet for Terminology Maps VF_SmokingStatus",
+    "url": "http://va.gov/fhir/ValueSet/SmokingStatus",
+    "experimental": false,
+    "compose": {
+      "include": [
+        {
+          "system": "http://snomed.info/sct",
+          "concept": [
+            {
+              "code": "77176002",
+              "display": "Smoker (finding)"
+            },
+            {
+              "code": "110483000",
+              "display": "Tobacco user (finding)"
+            },
+            {
+              "code": "8517006",
+              "display": "Ex-smoker (finding)"
+            },
+            {
+              "code": "266919005",
+              "display": "Never smoked tobacco (finding)"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
