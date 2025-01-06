@@ -36,12 +36,17 @@
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <!--<fhirVersion value="4.0.1"/>-->
   <fhirVersion value="4.0.1"/>
-  <dependsOn id="hl7_fhir_us_core">
+  <dependsOn id="uscore5">
     <packageId value="hl7.fhir.us.core"/>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="5.0.1"/>
   </dependsOn>
-  <!-- <dependsOn id="hl7_fhir_us_core_v610">
+  <dependsOn id="uscore3">
+    <packageId value="hl7.fhir.us.core.v311"/>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <!-- <dependsOn id="uscore6">
     <packageId value="hl7.fhir.us.core.v610"/>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="6.1.0"/>
