@@ -2,3 +2,5 @@ output
 template
 input-cache
 temp
+.index*
+*.log

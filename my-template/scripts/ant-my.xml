@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyExtension">
+    <import file="ant.xml"/>
+    <target name="onLoad.extend" depends="onLoad.updateIg">
+        <exec executable="/bin/sh" osfamily="unix" dir="script" outputproperty="script.output">
+        <arg value="hello.sh"/>
+        </exec>
+
+        <concat destfile="input/includes/hello.log" append="true">${script.output}</concat>
+        <!-- <echo file="script/hello.log" message="${script.output}"/> -->
+    </target>
+</project>
