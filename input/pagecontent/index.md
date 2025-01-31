@@ -7,6 +7,17 @@
     * [ValueSet-SmokingStatus.json](ValueSet-SmokingStatus.html)
 * [compliesWithProfile](https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/compliesWithProfile.20issue)
     * [StructureDefinition-Patient.json](StructureDefinition-Patient.html)
+    * And add the following to the ImplementationGuide resource
+        ```json
+        "definition": {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+                    "valueCode": "hl7.fhir.us.core#6.1.0"
+                }
+            ]
+        }
+        ```
 
 # Features
 
