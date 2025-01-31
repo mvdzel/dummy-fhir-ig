@@ -25,7 +25,7 @@
 
 Make sure you have **not** marked the Bundle as Example in the IG (in FSH use #definition).
 
-`resource/HistoryBundle.json` has history Provenance for [StructureDefinition/Patient](StructureDefinition-Patient.html)
+[resource/HistoryBundle.json](Bundle-hx.json.html) has history Provenance for [StructureDefinition/Patient](StructureDefinition-Patient.html)
 will enable [History tab](StructureDefinition-Patient.profile.history.html)
 
 ## Inserting a preprocess (onLoad.extend) script
