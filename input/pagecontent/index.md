@@ -1,5 +1,5 @@
 
-# Zulip Issues
+## Zulip Issues
 
 * [Ignore unsupported Code Systems](https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Unsupported.20code.20systems.20ignore)
 * [SNOMED edition expectations / Parameters-expansion-params](https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/SNOMED.20edition.20expectations)
@@ -19,16 +19,16 @@
         }
         ```
 
-# Features
+## Features
 
-## History Bundle with Provenance for resources
+### History Bundle with Provenance for resources
 
 Make sure you have **not** marked the Bundle as Example in the IG (in FSH use #definition).
 
 [resource/HistoryBundle.json](Bundle-hx.json.html) has history Provenance for [StructureDefinition/Patient](StructureDefinition-Patient.html)
 will enable [History tab](StructureDefinition-Patient.profile.history.html)
 
-## Inserting a preprocess (onLoad.extend) script
+### Inserting a preprocess (onLoad.extend) script
 
 Added in my-template/config.json -> ant-my.xml that will exec script.sh after sushi runs.
 Have not found a way to call something before sushi runs.
@@ -62,3 +62,12 @@ Output from script:
 ```
 {% include hello.log %}
 ```
+
+### OpenEHR ADL Import
+
+<div class="dragon">Not yet working for me</div>
+<br/>
+
+1. Download package.tgz from https://build.fhir.org/ig/FHIR/openehr-base-ig/index.html
+2. Extract in ~/.fhir/packages/openehr.base#0.1.0
+3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
