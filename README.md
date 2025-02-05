@@ -20,4 +20,6 @@ Requires "4 cores, 16 GB RAM" machine.
 
 @> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
 @> java -jar input-cache/publisher.jar -ig ig.ini
+
+@> http-server output
 ```
