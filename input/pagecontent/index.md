@@ -66,8 +66,6 @@ Output from script:
 ### OpenEHR ADL Import
 
 <div class="dragon">Not yet working for me</div>
-<br/>
-
-1. Download package.tgz from https://build.fhir.org/ig/FHIR/openehr-base-ig/index.html
-2. Extract in ~/.fhir/packages/openehr.base#0.1.0
-3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
+ 
+1. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
+1. See README.md for instructions
