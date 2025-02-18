@@ -71,15 +71,14 @@ Output from script:
 
 ### OpenEHR ADL Import
  
-<div class="dragon">Not yet working for me</div>
+<div class="dragon" markdown="1">
+* before 1.8.13: Not yet working for me
+* 1.8.13: Error on input ADL
+</div>
 <br/>
 
 1. Download package.tgz from https://build.fhir.org/ig/FHIR/openehr-base-ig/index.html
 2. Extract in ~/.fhir/packages/openehr.base#0.1.0
 3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
-
-```
-   curl -L https://build.fhir.org/ig/FHIR/openehr-base-ig/package.tgz -o openehr.base.package.tgz
-   mkdir -p ~/.fhir/packages/openehr.base#0.1.0
-   tar -zxvf openehr.base.package.tgz -C ~/.fhir/packages/openehr.base#0.1.0
-```
+4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
+    * n.b. file-extensie `.adl`
