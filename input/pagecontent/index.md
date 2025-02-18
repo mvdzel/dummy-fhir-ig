@@ -30,9 +30,9 @@ will enable [History tab](StructureDefinition-Patient.profile.history.html)
 
 ### Inserting a preprocess (onLoad.extend) script
 
+The IG Publisher first runs sushi and then ant.
+Have not found a good way to call something before sushi runs.
 Added in my-template/config.json -> ant-my.xml that will exec script.sh after sushi runs.
-Have not found a way to call something before sushi runs.
-Seems like IG Publisher first runs sushi and then ant.
 And this is probably NOT allowed on the HL7 CI Build.
 
 config.json:
@@ -71,3 +71,9 @@ Output from script:
 1. Download package.tgz from https://build.fhir.org/ig/FHIR/openehr-base-ig/index.html
 2. Extract in ~/.fhir/packages/openehr.base#0.1.0
 3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
+
+```
+   curl -L https://build.fhir.org/ig/FHIR/openehr-base-ig/package.tgz -o openehr.base.package.tgz
+   mkdir -p ~/.fhir/packages/openehr.base#0.1.0
+   tar -zxvf openehr.base.package.tgz -C ~/.fhir/packages/openehr.base#0.1.0
+```
