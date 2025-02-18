@@ -21,6 +21,8 @@
 
 ## Features
 
+* [Guidance for FHIR IG Creation](https://build.fhir.org/ig/FHIR/ig-guidance/)
+
 ### History Bundle with Provenance for resources
 
 Make sure you have **not** marked the Bundle as Example in the IG (in FSH use #definition).
@@ -63,8 +65,12 @@ Output from script:
 {% include hello.log %}
 ```
 
-### OpenEHR ADL Import
+### EView
 
+* See intro of [Patient EView](StructureDefinition-Patient.html)
+
+### OpenEHR ADL Import
+ 
 <div class="dragon">Not yet working for me</div>
 <br/>
 

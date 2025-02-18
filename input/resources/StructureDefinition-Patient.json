@@ -15,7 +15,7 @@
     "name": "Patient",
     "title": "Patient",
     "status": "active",
-    "description": "This StructureDefinition contains the maps for VistA file PATIENT (2) to us-core-patient.",
+    "description": "This StructureDefinition contains the extra must-supports to us-core-patient.",
     "fhirVersion": "4.0.1",
     "kind": "resource",
     "abstract": false,
@@ -28,6 +28,18 @@
                 "id": "Patient.extension:race",
                 "path": "Patient.extension",
                 "sliceName": "race",
+                "mustSupport": true
+            },
+            {
+                "id": "Patient.name",
+                "path": "Patient.name",
+                "short": "Naam van de patient",
+                "mustSupport": true
+            },
+            {
+                "id": "Patient.gender",
+                "path": "Patient.gender",
+                "short": "Het geslacht",
                 "mustSupport": true
             }
         ]
