@@ -84,3 +84,7 @@ Output from script:
 3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
 4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
     * n.b. file-extensie `.adl`
+
+### ADL EView
+
+{% include StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1-eview.xhtml %}
