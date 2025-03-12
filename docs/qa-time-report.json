@@ -1,0 +1,404 @@
+{
+  "date" : "Wed, 12 Mar, 2025 08:21:22 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/input/myig.xml",
+      "size" : 3943,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 33
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 39,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 695
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 7263
+        },
+        {
+          "activity" : "generateLogicalMaps",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 171
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 224
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 107,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 121,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CodeSystem-CSVFallergySeverity.json",
+      "size" : 840,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 39
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 43
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 41
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 2455
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 25770
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 107,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/HistoryBundle.json",
+      "size" : 4022,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 38
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 34
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 138
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 230
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 53,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 58
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 57
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/Parameters-exp-params.json",
+      "size" : 222,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 34
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 43
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-Patient.json",
+      "size" : 2065,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 34
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 17
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 35,
+          "length" : 391
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 203
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 2148
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 562
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 2261
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 2113
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 92,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 107,
+          "length" : 61
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 121,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 121,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-Smoking-sct.json",
+      "size" : 921,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 32
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 167
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 69
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 56
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 1109
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 107,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-VSVFallergySeverity.json",
+      "size" : 404,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 33
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 53
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 58
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 236
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 107,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-VitalsLaterality.json",
+      "size" : 617,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 33
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 64
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 378
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 196
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 107,
+          "length" : 2
+        }
+      ]
+    }
+  ]
+}

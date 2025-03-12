@@ -1,0 +1,31 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://va.gov/fhir/ValueSet/SmokingStatus",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SmokingStatus",
+      "title" : "SmokingStatus FHIR",
+      "description" : "FHIR Target ValueSet for Terminology Maps VF_SmokingStatus",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://va.gov/fhir/ValueSet/VSVFallergySeverity",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "VF_allergySeverity",
+      "title" : "VF_allergySeverity",
+      "description" : "Source ValueSet for Terminology Maps VF_allergySeverity",
+      "systems" : ["http://va.gov/fhir/CodeSystem/120.85-14.5"]
+    },
+    {
+      "url" : "http://va.gov/fhir/ValueSet/VitalsLaterality",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "VitalsLaterality",
+      "title" : "VitalsLaterality",
+      "description" : "ValueSet for Terminology Maps VitalsLaterality",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/VHA"]
+    }
+  ]
+}

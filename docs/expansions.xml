@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="92faca5d-20df-4388-973a-c67f4c9a87ed"/>
+  <meta>
+    <lastUpdated value="2025-03-12T08:21:22.938+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://va.gov/fhir/ValueSet/SmokingStatus"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on SNOMED CT 731000124108 edition 01-Sep 2024</p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-77176002"> </a>  
+                  <a href="http://snomed.info/id/77176002">77176002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-110483000"> </a>  
+                  <a href="http://snomed.info/id/110483000">110483000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-8517006"> </a>  
+                  <a href="http://snomed.info/id/8517006">8517006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-266919005"> </a>  
+                  <a href="http://snomed.info/id/266919005">266919005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://va.gov/fhir/ValueSet/SmokingStatus"/>
+        <version value="0.2.0"/>
+        <name value="SmokingStatus"/>
+        <title value="SmokingStatus FHIR"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-03-12T08:20:45+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1b3444ec-98be-4bd5-97c4-c1fcb87a47d0"/>
+          <timestamp value="2025-03-12T08:22:12+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77176002"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110483000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8517006"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="266919005"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://va.gov/fhir/ValueSet/VSVFallergySeverity"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-120.85-14.5.html">codesystem 120.85-14.5 v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://va.gov/fhir/CodeSystem/120.85-14.5-1"> </a>  
+                  <a href="CodeSystem-120.85-14.5.html#120.85-14.5-1">1</a>
+                </td>
+                <td>http://va.gov/fhir/CodeSystem/120.85-14.5</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://va.gov/fhir/CodeSystem/120.85-14.5-2"> </a>  
+                  <a href="CodeSystem-120.85-14.5.html#120.85-14.5-2">2</a>
+                </td>
+                <td>http://va.gov/fhir/CodeSystem/120.85-14.5</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://va.gov/fhir/CodeSystem/120.85-14.5-3"> </a>  
+                  <a href="CodeSystem-120.85-14.5.html#120.85-14.5-3">3</a>
+                </td>
+                <td>http://va.gov/fhir/CodeSystem/120.85-14.5</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://va.gov/fhir/ValueSet/VSVFallergySeverity"/>
+        <version value="0.2.0"/>
+        <name value="VF_allergySeverity"/>
+        <title value="VF_allergySeverity"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-03-12T08:20:45+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2dabaa8f-1aff-4a52-8fb2-ac873718eca9"/>
+          <timestamp value="2025-03-12T08:22:12+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://va.gov/fhir/CodeSystem/120.85-14.5|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://va.gov/fhir/CodeSystem/120.85-14.5"/>
+            <code value="1"/>
+          </contains>
+          <contains>
+            <system value="http://va.gov/fhir/CodeSystem/120.85-14.5"/>
+            <code value="2"/>
+          </contains>
+          <contains>
+            <system value="http://va.gov/fhir/CodeSystem/120.85-14.5"/>
+            <code value="3"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

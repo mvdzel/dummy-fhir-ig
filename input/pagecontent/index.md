@@ -18,6 +18,8 @@
             ]
         }
         ```
+* [Relative link instead of absolute link in narrativeLink extension to originalText extension](https://github.com/HL7/fhir-ig-publisher/issues/898#issuecomment-2715782606)
+    * See [Patient Profile](StructureDefinition-Patient-definitions.html#key_Patient.extension:originalText)
 
 ## Features
 

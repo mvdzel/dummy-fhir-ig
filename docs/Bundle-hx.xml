@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="hx"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://va.gov/fhir/Provenance/1"/>
+    <resource>
+      <Provenance>
+        <id value="1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Provenance_1"> </a><p class="res-header-id"><b>Generated Narrative: Provenance 1</b></p><a name="1"> </a><a name="hc1"> </a><a name="1-en-US"> </a><p>Provenance for <a href="StructureDefinition-Patient.html">StructureDefinition Patient</a></p><p>Summary</p><table class="grid"><tr><td>Occurrence</td><td>2024-01-24</td></tr><tr><td>Recorded</td><td>2024-01-24 00:00:00+0000</td></tr><tr><td>Activity</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}">create</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td>JL</td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type custodian}">Custodian</span></td><td>Vdzi</td></tr></table></div>
+        </text>
+        <target>
+          <reference value="StructureDefinition/Patient"/>
+        </target>
+        <occurredDateTime value="2024-01-24"/>
+        <recorded value="2024-01-24T00:00:00Z"/>
+        <reason>
+          <text value="Created"/>
+        </reason>
+        <activity>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+            <code value="CREATE"/>
+          </coding>
+        </activity>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+            </coding>
+          </type>
+          <who>
+            <display value="JL"/>
+          </who>
+        </agent>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="custodian"/>
+            </coding>
+          </type>
+          <who>
+            <display value="Vdzi"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://va.gov/fhir/Provenance/2"/>
+    <resource>
+      <Provenance>
+        <id value="2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Provenance_2"> </a><p class="res-header-id"><b>Generated Narrative: Provenance 2</b></p><a name="2"> </a><a name="hc2"> </a><a name="2-en-US"> </a><p>Provenance for <a href="StructureDefinition-Patient.html">StructureDefinition Patient</a></p><p>Summary</p><table class="grid"><tr><td>Occurrence</td><td>2025-01-24</td></tr><tr><td>Recorded</td><td>2025-01-24 00:00:00+0000</td></tr><tr><td>Activity</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation UPDATE}">revise</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td>MZ</td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type custodian}">Custodian</span></td><td>Vdzi</td></tr></table></div>
+        </text>
+        <target>
+          <reference value="StructureDefinition/Patient"/>
+        </target>
+        <occurredDateTime value="2025-01-24"/>
+        <recorded value="2025-01-24T00:00:00Z"/>
+        <reason>
+          <text value="Last modified"/>
+        </reason>
+        <activity>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+            <code value="UPDATE"/>
+          </coding>
+        </activity>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+            </coding>
+          </type>
+          <who>
+            <display value="MZ"/>
+          </who>
+        </agent>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="custodian"/>
+            </coding>
+          </type>
+          <who>
+            <display value="Vdzi"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+  </entry>
+</Bundle>

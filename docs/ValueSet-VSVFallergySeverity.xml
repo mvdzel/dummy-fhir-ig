@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSVFallergySeverity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSVFallergySeverity</b></p><a name="VSVFallergySeverity"> </a><a name="hcVSVFallergySeverity"> </a><a name="VSVFallergySeverity-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-120.85-14.5.html"><code>http://va.gov/fhir/CodeSystem/120.85-14.5</code></a></li></ul></div>
+  </text>
+  <url value="http://va.gov/fhir/ValueSet/VSVFallergySeverity"/>
+  <version value="0.2.0"/>
+  <name value="VF_allergySeverity"/>
+  <title value="VF_allergySeverity"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-03-12T08:20:45+00:00"/>
+  <publisher value="Michael van der Zel"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Source ValueSet for Terminology Maps VF_allergySeverity"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://va.gov/fhir/CodeSystem/120.85-14.5"/>
+    </include>
+  </compose>
+</ValueSet>

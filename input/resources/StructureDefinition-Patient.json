@@ -31,6 +31,19 @@
                 "mustSupport": true
             },
             {
+                "id" : "Patient.extension:originalText",
+                "path" : "Patient.extension",
+                "sliceName" : "originalText",
+                "type" : [
+                  {
+                    "code" : "Extension",
+                    "profile" : [
+                        "http://hl7.org/fhir/StructureDefinition/originalText"
+                    ]
+                  }
+                ]
+            },
+            {
                 "id": "Patient.name",
                 "path": "Patient.name",
                 "short": "Naam van de patient",

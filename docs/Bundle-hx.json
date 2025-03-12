@@ -1,0 +1,99 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "hx",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://va.gov/fhir/Provenance/1",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance 1</b></p><a name=\"1\"> </a><a name=\"hc1\"> </a><a name=\"1-en-US\"> </a><p>Provenance for <a href=\"StructureDefinition-Patient.html\">StructureDefinition Patient</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2024-01-24</td></tr><tr><td>Recorded</td><td>2024-01-24 00:00:00+0000</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td>JL</td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type custodian}\">Custodian</span></td><td>Vdzi</td></tr></table></div>"
+      },
+      "target" : [{
+        "reference" : "StructureDefinition/Patient"
+      }],
+      "occurredDateTime" : "2024-01-24",
+      "recorded" : "2024-01-24T00:00:00Z",
+      "reason" : [{
+        "text" : "Created"
+      }],
+      "activity" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+          "code" : "CREATE"
+        }]
+      },
+      "agent" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "author"
+          }]
+        },
+        "who" : {
+          "display" : "JL"
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "custodian"
+          }]
+        },
+        "who" : {
+          "display" : "Vdzi"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://va.gov/fhir/Provenance/2",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance 2</b></p><a name=\"2\"> </a><a name=\"hc2\"> </a><a name=\"2-en-US\"> </a><p>Provenance for <a href=\"StructureDefinition-Patient.html\">StructureDefinition Patient</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2025-01-24</td></tr><tr><td>Recorded</td><td>2025-01-24 00:00:00+0000</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation UPDATE}\">revise</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td>MZ</td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type custodian}\">Custodian</span></td><td>Vdzi</td></tr></table></div>"
+      },
+      "target" : [{
+        "reference" : "StructureDefinition/Patient"
+      }],
+      "occurredDateTime" : "2025-01-24",
+      "recorded" : "2025-01-24T00:00:00Z",
+      "reason" : [{
+        "text" : "Last modified"
+      }],
+      "activity" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+          "code" : "UPDATE"
+        }]
+      },
+      "agent" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "author"
+          }]
+        },
+        "who" : {
+          "display" : "MZ"
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "custodian"
+          }]
+        },
+        "who" : {
+          "display" : "Vdzi"
+        }
+      }]
+    }
+  }]
+}

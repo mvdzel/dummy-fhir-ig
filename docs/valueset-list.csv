@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://va.gov/fhir/ValueSet/SmokingStatus,0.2.0,active,,SmokingStatus,SmokingStatus FHIR,"FHIR Target ValueSet for Terminology Maps VF_SmokingStatus",,"SCT"
+http://va.gov/fhir/ValueSet/VSVFallergySeverity,0.2.0,draft,,VF_allergySeverity,VF_allergySeverity,"Source ValueSet for Terminology Maps VF_allergySeverity",,"Internal"
+http://va.gov/fhir/ValueSet/VitalsLaterality,0.2.0,draft,,VitalsLaterality,VitalsLaterality,"ValueSet for Terminology Maps VitalsLaterality",,"THO"
