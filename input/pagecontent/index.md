@@ -74,8 +74,8 @@ Output from script:
 ### OpenEHR ADL Import
  
 <div class="dragon" markdown="1">
-* before 1.8.13: Not yet working for me
-* 1.8.13: Error on input ADL
+* before FHIR IG Publisher Version 1.8.13: Not yet working for me
+    * FHIR IG Publisher Version 1.8.13: Error on input ADL
 </div>
 <br/>
 
@@ -84,7 +84,8 @@ Output from script:
 3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
 4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
     * n.b. file-extensie `.adl`
-
-### ADL EView
-
-{% include StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1-eview.xhtml %}
+    * and place in input/archetypes
+5. [9-apr-2025] FHIR IG Publisher Version 1.8.23 doesnot generate the xhtml or json files anymore :-(, just HTML with the json...?
+    * Copied json from `temp/qa/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1-json-html.html`
+    * Put that json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json
+    * Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)
