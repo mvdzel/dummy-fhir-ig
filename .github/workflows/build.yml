@@ -1,0 +1,49 @@
+name: Build IG
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  Run-IG-Builder:
+    name: Run IG builder on master and publish on GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup JDK version
+        uses: actions/setup-java@v4.0.0
+        with:
+          java-version: 21
+          distribution: temurin
+
+      - name: Install GraphViz and Jekyll
+        run: sudo apt update; sudo apt install graphviz jekyll
+
+      - name: Checkout IG files
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Get IG Publisher jar
+        run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o publisher.jar
+
+      - name: Run the IG Builder
+        run: java -jar publisher.jar -ig ig.ini
+
+      # # Directly deploy to GitHub Pages
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v4
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: 'output'
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
