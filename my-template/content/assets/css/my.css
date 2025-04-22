@@ -1,0 +1,12 @@
+body {
+    transition: filter 0.3s ease-in-out; /* Optional: for a smooth transition */
+  }
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.color {
+    filter: grayscale(0%);
+    /* Or just no filter at all */
+}

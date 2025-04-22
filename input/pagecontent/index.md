@@ -89,3 +89,10 @@ Output from script:
     * Copied json from `temp/qa/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1-json-html.html`
     * Put that json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json
     * Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)
+
+## Color/Grayscale toggle
+
+Added to my-template:
+* content/assets/css - the css file
+* includes/_append.fragment-css.html - include css needed
+* includes/_append.fragment-footer.html - the button (+script) to toggle

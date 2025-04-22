@@ -1,0 +1,17 @@
+<button id="colorToggle">Switch to Grayscale</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('colorToggle');
+        const bodyElement = document.body;
+
+        toggleButton.addEventListener('click', function () {
+            bodyElement.classList.toggle('grayscale');
+            if (bodyElement.classList.contains('grayscale')) {
+                toggleButton.textContent = 'Switch to Color';
+            } else {
+                toggleButton.textContent = 'Switch to Grayscale';
+            }
+        });
+    });
+</script>
