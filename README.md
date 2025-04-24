@@ -1,7 +1,7 @@
 # Build this IG
 
 ```
-> docker run --rm -it -v $(pwd):/home/publisher/ig hl7fhir/ig-publisher-base:latest
+> docker run --rm -it -v $(pwd):/home/publisher/ig -v $(pwd)/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base:latest
 @> _updatePublisher.sh
 @> _genonce.sh
 ```
@@ -10,27 +10,26 @@
 
 ## Setup
 
-Requires "4 cores, 16 GB RAM" machine.
+* Requires "4 cores, 16 GB RAM" machine.
+* First 2 apt-get required because CodeSpace uses plain Ubuntu.
 
 ```
 @> sudo apt-get update
 @> sudo apt-get install jekyll graphviz wget
-@> ./_updatePublisher.sh
-@> curl -L https://build.fhir.org/ig/FHIR/openehr-base-ig/package.tgz -o input-cache/openehr.base.package.tgz
-@> mkdir -p ~/.fhir/packages/openehr.base#0.1.0
-@> tar -zxvf input-cache/openehr.base.package.tgz -C ~/.fhir/packages/openehr.base#0.1.0
 @> npm install -g http-server
+@> ./_updatePublisher.sh
+@> ./setup-openehr.sh
 ```
 
 ## Build
 
 ```
-
 @> ./_genonce.sh
 ```
 or
 ```
 @> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
+(ADL) @> curl -L https://github.com/HL7/fhir-ig-publisher/releases/download/1.8.13/publisher.jar -o input-cache/publisher.jar
 @> java -jar input-cache/publisher.jar -ig ig.ini
 ```
 

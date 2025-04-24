@@ -5,7 +5,7 @@
     "id": "SmokingStatus",
     "title": "SmokingStatus FHIR",
     "description": "FHIR Target ValueSet for Terminology Maps VF_SmokingStatus",
-    "url": "http://va.gov/fhir/ValueSet/SmokingStatus",
+    "url": "http://vdzi.nl/fhir/ValueSet/SmokingStatus",
     "experimental": false,
     "compose": {
       "include": [

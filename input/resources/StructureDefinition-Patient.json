@@ -11,7 +11,7 @@
             "valueCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|3.1.1"
         }
     ],
-    "url": "http://va.gov/fhir/StructureDefinition/Patient",
+    "url": "http://vdzi.nl/fhir/StructureDefinition/Patient",
     "name": "Patient",
     "title": "Patient",
     "status": "active",

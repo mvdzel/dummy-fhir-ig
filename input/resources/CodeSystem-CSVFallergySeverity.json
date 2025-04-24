@@ -8,7 +8,7 @@
     },
     "identifier": [
         {
-            "system": "http://va.gov/terminology/vistaDefinedTerms",
+            "system": "http://vdzi.nl/terminology/vistaDefinedTerms",
             "value": "120.85-14.5"
         }
     ],

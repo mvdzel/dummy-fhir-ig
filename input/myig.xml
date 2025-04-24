@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="fhir.us.va.maps"/>
-  <url value="http://va.gov/fhir/ImplementationGuide/fhir.us.va.maps"/>
+  <id value="dummy.vdzi.nl"/>
+  <url value="http://vdzi.nl/fhir/ImplementationGuide/dummy.vdzi.nl"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="DummyIG"/>
   <title value="Dummy IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="Michael van der Zel"/>
-  <contact>
-    <telecom>
-      <!-- Or whatever URL and/or email address(es) are appropriate -->
-      <system value="url"/>
-      <value value="http://hl7.org/Special/committees/[something]"/>
-    </telecom>
-  </contact>
+  <publisher value="Michael van der Zel"/>  
   <description value="This Dummy IG is my sandbox to try out IG Publisher features and issues."/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
@@ -30,7 +23,7 @@
       -->
     </coding>
   </jurisdiction>
-  <packageId value="fhir.us.va.maps"/>
+  <packageId value="dummy.vdzi.nl"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->

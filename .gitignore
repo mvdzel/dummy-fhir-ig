@@ -4,3 +4,4 @@ input-cache
 temp
 .index*
 *.log
+.fhir

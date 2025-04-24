@@ -5,7 +5,7 @@
   "id": "VitalsLaterality",
   "title": "VitalsLaterality",
   "description": "ValueSet for Terminology Maps VitalsLaterality",
-  "url": "http://va.gov/fhir/ValueSet/VitalsLaterality",
+  "url": "http://vdzi.nl/fhir/ValueSet/VitalsLaterality",
   "experimental": false,
   "compose": {
     "include": [

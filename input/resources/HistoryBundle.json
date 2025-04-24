@@ -4,7 +4,7 @@
     "type": "collection",
     "entry": [
         {
-            "fullUrl": "http://va.gov/fhir/Provenance/1",
+            "fullUrl": "http://vdzi.nl/fhir/Provenance/1",
             "resource": {
                 "resourceType": "Provenance",
                 "id": "1",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "fullUrl": "http://va.gov/fhir/Provenance/2",
+            "fullUrl": "http://vdzi.nl/fhir/Provenance/2",
             "resource": {
                 "resourceType": "Provenance",
                 "id": "2",

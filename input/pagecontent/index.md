@@ -85,9 +85,8 @@ Output from script:
 4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
     * n.b. file-extensie `.adl`
     * and place in input/archetypes
-5. [9-apr-2025] FHIR IG Publisher Version 1.8.23 doesnot generate the xhtml or json files anymore :-(, just HTML with the json...?
-    * Copied json from `temp/qa/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1-json-html.html`
-    * Put that json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json
+5. [9-apr-2025] Somewhere after FHIR IG Publisher Version 1.8.13 and before v1.8.23 ADL import was disabled
+    * Added output json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json
     * Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)
 
 ## Color/Grayscale toggle
