@@ -74,8 +74,8 @@ Output from script:
 ### OpenEHR ADL Import
  
 <div class="dragon" markdown="1">
-* before FHIR IG Publisher Version 1.8.13: Not yet working for me
-    * FHIR IG Publisher Version 1.8.13: Error on input ADL
+* You need IG Publisher 2.0.4 for OpenEHR ADL Support.
+* Check out [OpenEHR Test IG](https://github.com/FHIR/openehr-test/).
 </div>
 <br/>
 
@@ -85,9 +85,17 @@ Output from script:
 4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
     * n.b. file-extensie `.adl`
     * and place in input/archetypes
-5. [9-apr-2025] Somewhere after FHIR IG Publisher Version 1.8.13 and before v1.8.23 ADL import was disabled
-    * Added output json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json
-    * Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)
+5. ~~[9-apr-2025] Somewhere after FHIR IG Publisher Version 1.8.13 and before v1.8.23 ADL import was disabled~~
+    * ~~Added output json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json~~
+    * ~~Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)~~
+6. [3-jun-2025] During OpenEHR/HL7 Joint meeting IG Publisher Version 2.0.4 includes ADL support again.
+7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true - *not getting the OpenEHR tabs yet*
+```xml
+    <parameter>
+      <code value="openehr"/>
+      <value value="true"/>
+    </parameter>
+```
 
 ## Color/Grayscale toggle
 
