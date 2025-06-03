@@ -89,7 +89,7 @@ Output from script:
     * ~~Added output json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json~~
     * ~~Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)~~
 6. [3-jun-2025] During OpenEHR/HL7 Joint meeting IG Publisher Version 2.0.4 includes ADL support again.
-7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true - *not getting the OpenEHR tabs yet*
+7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true - *not getting the OpenEHR tabs yet; maybe because we do R4*
 ```xml
     <parameter>
       <code value="openehr"/>
