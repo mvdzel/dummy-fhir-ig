@@ -1,0 +1,15 @@
+{
+    "resourceType": "NamingSystem",
+    "id": "ns-mz",
+    "name": "MZ",
+    "status": "draft",
+    "kind": "identifier",
+    "date": "2025-08-21",
+    "uniqueId": [
+        {
+            "type": "uri",
+            "value": "http://vdzi.nl/identifiers/medical-record-number",
+            "preferred": true
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "resourceType": "NamingSystem",
+    "id": "ns-120.85-14.5",
+    "name": "120.85-14.5",
+    "status": "draft",
+    "kind": "codesystem",
+    "date": "2025-08-21",
+    "uniqueId": [
+        {
+            "type": "uri",
+            "value": "http://vdzi.nl/fhir/CodeSystem/120.85-14.5",
+            "preferred": true
+        }
+    ]
+}

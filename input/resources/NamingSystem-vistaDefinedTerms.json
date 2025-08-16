@@ -1,0 +1,15 @@
+{
+    "resourceType": "NamingSystem",
+    "id": "ns-vistaDefinedTerms",
+    "name": "VistaDefinedTerms",
+    "status": "draft",
+    "kind": "codesystem",
+    "date": "2025-08-21",
+    "uniqueId": [
+        {
+            "type": "uri",
+            "value": "http://vdzi.nl/terminology/vistaDefinedTerms",
+            "preferred": true
+        }
+    ]
+}

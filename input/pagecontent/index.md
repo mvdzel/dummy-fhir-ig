@@ -89,7 +89,8 @@ Output from script:
     * ~~Added output json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json~~
     * ~~Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)~~
 6. [3-jun-2025] During OpenEHR/HL7 Joint meeting IG Publisher Version 2.0.4 includes ADL support again.
-7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true - *not getting the OpenEHR tabs yet; maybe because we do R4*
+7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true
+    * Not getting the OpenEHR tabs yet - is it in the template, which is not published yet?
 ```xml
     <parameter>
       <code value="openehr"/>
@@ -103,3 +104,17 @@ Added to my-template:
 * content/assets/css - the css file
 * includes/_append.fragment-css.html - include css needed
 * includes/_append.fragment-footer.html - the button (+script) to toggle
+
+## QA Resolutions
+
+**Terminology**
+
+* `No definition could be found for URL value 'http://va.gov/terminology/`
+
+    Resolve by creating a NameSystem resource (either kind=identifier or codesystem) for the URL.
+    
+
+* `Error from https://tx.fhir.org/r4: Unable to provide support for code system http://vdzi.nl/fhir/CodeSystem/120.85-14.5`
+
+    Codesystem is not in tx-server, resolve by own tx-server or defining the CodeSystem in your IG.
+    

@@ -31,17 +31,38 @@
                 "mustSupport": true
             },
             {
-                "id" : "Patient.extension:originalText",
-                "path" : "Patient.extension",
-                "sliceName" : "originalText",
-                "type" : [
-                  {
-                    "code" : "Extension",
-                    "profile" : [
-                        "http://hl7.org/fhir/StructureDefinition/originalText"
-                    ]
-                  }
+                "id": "Patient.extension:originalText",
+                "path": "Patient.extension",
+                "sliceName": "originalText",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/StructureDefinition/originalText"
+                        ]
+                    }
                 ]
+            },
+            {
+                "id": "Patient.identifier",
+                "path": "Patient.identifier",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Patient.identifier:MZ",
+                "path": "Patient.identifier",
+                "sliceName": "MZ",
+                "patternIdentifier": {
+                    "system": "http://vdzi.nl/identifiers/medical-record-number"
+                }
             },
             {
                 "id": "Patient.name",
