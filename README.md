@@ -1,7 +1,6 @@
 # Build this IG
 
 ```
-// > docker run --rm -it -v $(pwd):/home/publisher/ig -v $(pwd)/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base:latest
 > docker run --name dummy-ig -it -v $(pwd):/home/publisher/ig -v $(pwd)/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base:latest
 @> _updatePublisher.sh
 @> _genonce.sh

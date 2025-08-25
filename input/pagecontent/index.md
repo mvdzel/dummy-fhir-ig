@@ -5,19 +5,6 @@
 * [SNOMED edition expectations / Parameters-expansion-params](https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/SNOMED.20edition.20expectations)
     * [Parameters-exp-params.json](Parameters-exp-params.html)
     * [ValueSet-SmokingStatus.json](ValueSet-SmokingStatus.html)
-* [compliesWithProfile](https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/compliesWithProfile.20issue)
-    * [StructureDefinition-Patient.json](StructureDefinition-Patient.html)
-    * And add the following to the ImplementationGuide resource
-        ```json
-        "definition": {
-            "extension": [
-                {
-                    "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
-                    "valueCode": "hl7.fhir.us.core#6.1.0"
-                }
-            ]
-        }
-        ```
 * [Relative link instead of absolute link in narrativeLink extension to originalText extension](https://github.com/HL7/fhir-ig-publisher/issues/898#issuecomment-2715782606)
     * See [Patient Profile](StructureDefinition-Patient-definitions.html#key_Patient.extension:originalText)
 
@@ -98,6 +85,43 @@ Output from script:
     </parameter>
 ```
 
+## compliesWithProfile (multiple versions of the same dependsOn IG)
+
+Applied in [StructureDefinition-Patient.json](StructureDefinition-Patient.html).
+
+### using ig-link-dependency
+
+This makes the link work. Results in a QA error `Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0' does not resolve`.
+
+[Zulip:compliesWithProfile](https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/compliesWithProfile.20issue)
+
+And add the following to the ImplementationGuide resource:
+```json
+"definition": {
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+            "valueCode": "hl7.fhir.us.core#6.1.0"
+        }
+    ]
+}
+```
+
+### using npm package aliasing
+
+This makes the link work and resolves the QA error.
+
+[Zulip:NPM Aliases](https://chat.fhir.org/#narrow/channel/179239-tooling/topic/NPM.20Aliases/with/517985527)
+
+And add the following to the ImplementationGuide resource:
+```xml
+  <dependsOn id="uscore6">
+    <packageId value="v610@npm:hl7.fhir.us.core"/>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+```
+
 ## Color/Grayscale toggle
 
 Added to my-template:
@@ -112,7 +136,6 @@ Added to my-template:
 * `No definition could be found for URL value 'http://va.gov/terminology/`
 
     Resolve by creating a NameSystem resource (either kind=identifier or codesystem) for the URL.
-    
 
 * `Error from https://tx.fhir.org/r4: Unable to provide support for code system http://vdzi.nl/fhir/CodeSystem/120.85-14.5`
 

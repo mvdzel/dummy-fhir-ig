@@ -39,20 +39,25 @@
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="5.0.1"/>
   </dependsOn>
-  <dependsOn id="uscore3">
+  <!-- <dependsOn id="uscore3">
     <packageId value="hl7.fhir.us.core.v311"/>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="3.1.1"/>
+  </dependsOn> -->
+  <dependsOn id="uscore3">
+    <packageId value="v311@npm:hl7.fhir.us.core"/>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
   </dependsOn>
-  <!-- <dependsOn id="uscore6">
-    <packageId value="hl7.fhir.us.core.v610"/>
+  <dependsOn id="uscore6">
+    <packageId value="v610@npm:hl7.fhir.us.core"/>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="6.1.0"/>
-  </dependsOn> -->
+  </dependsOn>
   <definition>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency">
+    <!-- <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency">
       <valueCode value="hl7.fhir.us.core#6.1.0"/>
-    </extension>
+    </extension> -->
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
