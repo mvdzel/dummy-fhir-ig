@@ -1,0 +1,330 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "Patient2",
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode" : "can-be-target"
+    }
+  ],
+  "url" : "http://vdzi.nl/fhir/StructureDefinition/Patient2",
+  "version" : "1.8.0",
+  "name" : "Patient2",
+  "title" : "PATIENT (2)",
+  "status" : "active",
+  "date" : "2025-09-02T14:12:45+00:00",
+  "description" : "This StructureDefinition contains the Logical Model for the mapped parts of the source PATIENT (2)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }
+      ]
+    }
+  ],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://vdzi.nl/fhir/StructureDefinition/Patient2",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Patient2",
+        "path" : "Patient2",
+        "short" : "PATIENT (2)",
+        "definition" : "This StructureDefinition contains the Logical Model for the mapped parts of the source PATIENT (2)"
+      },
+      {
+        "id" : "Patient2.integrationControlNumber",
+        "path" : "Patient2.integrationControlNumber",
+        "short" : "INTEGRATION CONTROL NUMBER (-991.01)",
+        "definition" : "INTEGRATION CONTROL NUMBER (-991.01)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.name",
+        "path" : "Patient2.name",
+        "short" : "NAME (-.01)",
+        "definition" : "NAME (-.01)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.phoneNumberResidence",
+        "path" : "Patient2.phoneNumberResidence",
+        "short" : "PHONE NUMBER [RESIDENCE] (-.131)",
+        "definition" : "PHONE NUMBER [RESIDENCE] (-.131)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.phoneNumberWork",
+        "path" : "Patient2.phoneNumberWork",
+        "short" : "PHONE NUMBER [WORK] (-.132)",
+        "definition" : "PHONE NUMBER [WORK] (-.132)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.phoneNumberCellular",
+        "path" : "Patient2.phoneNumberCellular",
+        "short" : "PHONE NUMBER [CELLULAR] (-.134)",
+        "definition" : "PHONE NUMBER [CELLULAR] (-.134)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.dateOfBirth",
+        "path" : "Patient2.dateOfBirth",
+        "short" : "DATE OF BIRTH (-.03)",
+        "definition" : "DATE OF BIRTH (-.03)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.dateOfDeath",
+        "path" : "Patient2.dateOfDeath",
+        "short" : "DATE OF DEATH (-.351)",
+        "definition" : "DATE OF DEATH (-.351)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.streetAddressLine1",
+        "path" : "Patient2.streetAddressLine1",
+        "short" : "STREET ADDRESS [LINE 1] (-.111)",
+        "definition" : "STREET ADDRESS [LINE 1] (-.111)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.streetAddressLine2",
+        "path" : "Patient2.streetAddressLine2",
+        "short" : "STREET ADDRESS [LINE 2] (-.112)",
+        "definition" : "STREET ADDRESS [LINE 2] (-.112)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.streetAddressLine3",
+        "path" : "Patient2.streetAddressLine3",
+        "short" : "STREET ADDRESS [LINE 3] (-.113)",
+        "definition" : "STREET ADDRESS [LINE 3] (-.113)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.city",
+        "path" : "Patient2.city",
+        "short" : "CITY (-.114)",
+        "definition" : "CITY (-.114)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.state",
+        "path" : "Patient2.state",
+        "short" : "STATE (-.115)",
+        "definition" : "STATE (-.115)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.zip4",
+        "path" : "Patient2.zip4",
+        "short" : "ZIP+4 (-.1112)",
+        "definition" : "ZIP+4 (-.1112)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.country",
+        "path" : "Patient2.country",
+        "short" : "COUNTRY (-.1173)",
+        "definition" : "COUNTRY (-.1173)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.temporaryAddressStartDate",
+        "path" : "Patient2.temporaryAddressStartDate",
+        "short" : "TEMPORARY ADDRESS START DATE (-.1217)",
+        "definition" : "TEMPORARY ADDRESS START DATE (-.1217)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.temporaryAddressEndDate",
+        "path" : "Patient2.temporaryAddressEndDate",
+        "short" : "TEMPORARY ADDRESS END DATE (-.1218)",
+        "definition" : "TEMPORARY ADDRESS END DATE (-.1218)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Element"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.sex",
+        "path" : "Patient2.sex",
+        "short" : "SEX (-.02)",
+        "definition" : "SEX (-.02)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.selfIdentifiedGender",
+        "path" : "Patient2.selfIdentifiedGender",
+        "short" : "SELF IDENTIFIED GENDER (-.024)",
+        "definition" : "SELF IDENTIFIED GENDER (-.024)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.ethnicityInformation",
+        "path" : "Patient2.ethnicityInformation",
+        "short" : "ETHNICITY INFORMATION (-6)",
+        "definition" : "ETHNICITY INFORMATION (-6)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.raceInformation",
+        "path" : "Patient2.raceInformation",
+        "short" : "RACE INFORMATION (-2)",
+        "definition" : "RACE INFORMATION (-2)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.maritalStatus",
+        "path" : "Patient2.maritalStatus",
+        "short" : "MARITAL STATUS (-.05)",
+        "definition" : "MARITAL STATUS (-.05)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      },
+      {
+        "id" : "Patient2.religiousPreference",
+        "path" : "Patient2.religiousPreference",
+        "short" : "RELIGIOUS PREFERENCE (-.08)",
+        "definition" : "RELIGIOUS PREFERENCE (-.08)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      }
+    ]
+  }
+}

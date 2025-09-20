@@ -92,6 +92,7 @@ Applied in [StructureDefinition-Patient.json](StructureDefinition-Patient.html).
 ### using ig-link-dependency
 
 This makes the link work. Results in a QA error `Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0' does not resolve`.
+This was a work around for a version handling "bug" in the IG publisher. us-core6 has a profile for lab observation Specimen and us-core5 did not. But loading both resulted in us-core5 to also expect the Specimen profile. 
 
 [Zulip:compliesWithProfile](https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/compliesWithProfile.20issue)
 
@@ -108,6 +109,10 @@ And add the following to the ImplementationGuide resource:
 ```
 
 ### using npm package aliasing
+
+<div class="dragon" markdown="1">
+* You need IG Publisher 2.0.? for npm package aliasing.
+</div>
 
 This makes the link work and resolves the QA error.
 

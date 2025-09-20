@@ -17,6 +17,13 @@
     "status": "active",
     "description": "This StructureDefinition contains the extra must-supports to us-core-patient.",
     "fhirVersion": "4.0.1",
+    "mapping": [
+        {
+            "identity": "vista",
+            "uri": "http://example.org/vista",
+            "name": "Veterans Health Information Systems Technology and Architecture (VistA)"
+        }
+    ],
     "kind": "resource",
     "abstract": false,
     "type": "Patient",
@@ -28,7 +35,14 @@
                 "id": "Patient.extension:race",
                 "path": "Patient.extension",
                 "sliceName": "race",
-                "mustSupport": true
+                "mustSupport": true,
+                "mapping": [
+                    {
+                        "identity": "vista",
+                        "map": "576: terminologyMaps using VF_raceCategory on PATIENT - RACE INFORMATION (2-2)",
+                        "comment": "Do we collect any detailed race data?"
+                    }
+                ]
             },
             {
                 "id": "Patient.extension:originalText",

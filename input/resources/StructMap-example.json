@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureMap",
+  "id": "patient-transform",
+  "url": "http://vdzi.nl/fhir/StructureMap/patient-transform",
+  "name": "Patient to Patient",
+  "status": "draft",
+  "structure": [
+    {
+      "url": "http://vdzi.nl/fhir/StructureDefinition/Patient",
+      "mode": "source"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+      "mode": "target"
+    }
+  ],
+  "group": [
+    {
+      "name": "patientAddress",
+      "typeMode": "type-and-types",
+      "input": [
+        {
+          "name": "sourcePatient",
+          "type": "Patient",
+          "mode": "source"
+        }
+      ],
+      "output": [
+        {
+          "name": "targetPatient",
+          "type": "Patient",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "copyAddress",
+          "source": [
+            {
+              "context": "sourcePatient",
+              "element": "address",
+              "alias": "address"
+            }
+          ],
+          "target": [
+            {
+              "context": "targetPatient",
+              "element": "address",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "value": "address"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -32,7 +32,7 @@
   <dependsOn id="openEHRbase">
     <packageId value="openehr.base"/>
     <uri value="http://openehr.org/fhir/ImplementationGuide/openehr.base"/>
-    <version value="0.1.0"/>
+    <version value="dev"/>
   </dependsOn>
   <dependsOn id="uscore5">
     <packageId value="hl7.fhir.us.core"/>

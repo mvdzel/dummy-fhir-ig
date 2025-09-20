@@ -1,7 +1,7 @@
 # Build this IG
 
 ```
-> docker run --name dummy-ig -it -v $(pwd):/home/publisher/ig -v $(pwd)/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base:latest
+> docker run --rm --name dummy-ig -it -v $(pwd):/home/publisher/ig -v $(pwd)/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base:latest
 @> _updatePublisher.sh
 @> _genonce.sh
 ```
@@ -19,6 +19,7 @@
 @> npm install -g http-server
 @> ./_updatePublisher.sh
 @> ./setup-openehr.sh
+@> npm install -g @google/gemini-cli
 ```
 
 ## Build

@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LabObservationChemhemtoxriaserObservation",
+  "url": "http://vdzi.nl/fhir/StructureDefinition/LabObservationChemhemtoxriaserObservation",
+  "name": "LabObservationChemhemtoxriaserObservation",
+  "title": "Lab Observation: Chem, hem, tox, ria, ser Observation",
+  "status": "draft",
+  "description": "This StructureDefinition contains the maps for VistA file CHEM, HEM, TOX, RIA, SER, etc. (63.04) to us-core-observation-lab.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|5.0.1",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Specimen"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
