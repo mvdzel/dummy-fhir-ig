@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ConditionProblem",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile",
+      "valueCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile",
+      "valueCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|7.0.0"
+    }
+  ],
+  "url": "http://vdzi.nl/fhir/StructureDefinition/ConditionProblem",
+  "name": "ConditionProblem",
+  "title": "Condition: Problem",
+  "status": "draft",
+  "description": "This StructureDefinition contains the maps for VistA file PROBLEM (9000011) to us-core-condition-problems-health-concerns.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|5.0.1",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.extension:assertedDate",
+        "path": "Condition.extension",
+        "sliceName": "assertedDate"
+      },
+      {
+        "id": "Condition.extension:assertedDate.value[x]",
+        "path": "Condition.extension.value[x]"
+      },
+      {
+        "id": "Condition.identifier.system",
+        "path": "Condition.identifier.system",
+        "patternUri": "http://va.gov/identifiers/$Sta3n/9000011",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.identifier.value",
+        "path": "Condition.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://vdzi.nl/fhir/ValueSet/problemStatus",
+          "description": "see mapping [VF_problemStatus](ConceptMap-VF-problemStatus.html)"
+        }
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://vdzi.nl/fhir/ValueSet/problemVerificationStatus",
+          "description": "see mapping [VF_problemVerificationStatus](ConceptMap-VF-problemVerificationStatus.html)"
+        }
+      },
+      {
+        "id": "Condition.category:us-core",
+        "path": "Condition.category",
+        "sliceName": "us-core",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "problem-list-item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.code.coding:va-icd",
+        "path": "Condition.code.coding",
+        "sliceName": "va-icd",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:va-icd.system",
+        "path": "Condition.code.coding.system",
+        "patternUri": "urn:see-termmap-in-mapParameter",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:va-icd.code",
+        "path": "Condition.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:va-sct",
+        "path": "Condition.code.coding",
+        "sliceName": "va-sct",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:va-sct.system",
+        "path": "Condition.code.coding.system",
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:va-sct.code",
+        "path": "Condition.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.text",
+        "path": "Condition.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://vdzi.nl/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.onset[x]:onsetDateTime",
+        "path": "Condition.onset[x]",
+        "sliceName": "onsetDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.abatement[x]:abatementDateTime",
+        "path": "Condition.abatement[x]",
+        "sliceName": "abatementDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate"
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "mustSupport": true
+      }
+    ]
+  }
+}
