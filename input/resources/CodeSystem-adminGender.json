@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "CSadminGender",
+  "id": "CSadminGender",
+  "title": "VistA CodeSystem for 2-.02",
+  "description": "VistA Source CodeSystem for Terminology Maps",
+  "url": "http://vdzi.nl/terminology/vistaDefinedTerms/2-.02",
+  "concept": [
+    {
+      "code": "F",
+      "display": "FEMALE"
+    },
+    {
+      "code": "M",
+      "display": "MALE"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 2
+}
