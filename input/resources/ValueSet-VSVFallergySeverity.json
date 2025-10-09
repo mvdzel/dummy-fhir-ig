@@ -9,7 +9,7 @@
     "compose": {
       "include": [
         {
-          "system": "http://vdzi.nl/fhir/CodeSystem/120.85-14.5"
+          "system": "http://vdzi.nl/terminology/vistaDefinedTerms/120.85-14.5"
         }
       ]
     }

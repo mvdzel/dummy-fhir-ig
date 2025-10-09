@@ -10,6 +10,11 @@
             "type": "uri",
             "value": "http://vdzi.nl/fhir/CodeSystem/120.85-14.5",
             "preferred": true
+        },
+        {
+            "type": "uri",
+            "value": "http://vdzi.nl/terminology/vistaDefinedTerms/120.85-14.5",
+            "preferred": false
         }
     ]
 }

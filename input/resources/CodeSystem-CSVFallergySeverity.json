@@ -8,8 +8,8 @@
     },
     "identifier": [
         {
-            "system": "http://vdzi.nl/terminology/vistaDefinedTerms",
-            "value": "120.85-14.5"
+            "system": "urn:ietf:rfc:3986",
+            "value": "http://vdzi.nl/terminology/vistaDefinedTerms/120.85-14.5"
         }
     ],
     "name": "CSVFallergySeverity",
