@@ -54,11 +54,17 @@ Output from script:
 {% include hello.log %}
 ```
 
-### EView
+### OpenEHR
+
+#### OpenEHR Profile Views
+
+To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you need to use a template that is based on fhir2.base.template.
+
+#### EView
 
 * See intro of [Patient EView](StructureDefinition-Patient.html)
 
-### OpenEHR ADL Import
+#### OpenEHR ADL Import
  
 <div class="dragon" markdown="1">
 * You need IG Publisher 2.0.4 for OpenEHR ADL Support.
@@ -67,7 +73,7 @@ Output from script:
 <br/>
 
 1. Download package.tgz from https://build.fhir.org/ig/FHIR/openehr-base-ig/index.html
-2. Extract in ~/.fhir/packages/openehr.base#0.1.0
+2. Extract in ~/.fhir/packages/openehr.base#current
 3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
 4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
     * n.b. file-extensie `.adl`

@@ -4,7 +4,7 @@
   <id value="dummy.vdzi.nl"/>
   <url value="http://vdzi.nl/fhir/ImplementationGuide/dummy.vdzi.nl"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.3.0"/>
+  <version value="0.4.0"/>
   <name value="DummyIG"/>
   <title value="Dummy IG"/>
   <status value="draft"/>
@@ -40,11 +40,6 @@
     <version value="5.0.1"/>
   </dependsOn>
   <!-- <dependsOn id="uscore3">
-    <packageId value="hl7.fhir.us.core.v311"/>
-    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
-    <version value="3.1.1"/>
-  </dependsOn> -->
-  <dependsOn id="uscore3">
     <packageId value="v311@npm:hl7.fhir.us.core"/>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="3.1.1"/>
@@ -53,7 +48,7 @@
     <packageId value="v610@npm:hl7.fhir.us.core"/>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <version value="6.1.0"/>
-  </dependsOn>
+  </dependsOn> -->
   <definition>
     <!-- <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency">
       <valueCode value="hl7.fhir.us.core#6.1.0"/>
