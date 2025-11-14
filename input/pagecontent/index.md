@@ -58,9 +58,9 @@ Output from script:
 
 #### OpenEHR Profile Views
 
-To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you need to use a template that is based on fhir2.base.template.
+To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you need to use a template that is based on `fhir2.base.template`.
 
-#### EView
+#### EViews of all Profiles
 
 * See intro of [Patient EView](StructureDefinition-Patient.html)
 
@@ -83,7 +83,7 @@ To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you ne
     * ~~Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)~~
 6. [3-jun-2025] During OpenEHR/HL7 Joint meeting IG Publisher Version 2.0.4 includes ADL support again.
 7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true
-    * Not getting the OpenEHR tabs yet - is it in the template, which is not published yet?
+
 ```xml
     <parameter>
       <code value="openehr"/>
