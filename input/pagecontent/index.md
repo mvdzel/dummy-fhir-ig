@@ -19,7 +19,7 @@ Make sure you have **not** marked the Bundle as Example in the IG (in FSH use #d
 [resource/HistoryBundle.json](Bundle-hx.json.html) has history Provenance for [StructureDefinition/Patient](StructureDefinition-Patient.html)
 will enable [History tab](StructureDefinition-Patient.profile.history.html)
 
-### Inserting a preprocess (onLoad.extend) script
+### Inserting a preprocess script (onLoad.extend)
 
 The IG Publisher first runs sushi and then ant.
 Have not found a good way to call something before sushi runs.
@@ -53,6 +53,31 @@ Output from script:
 ```
 {% include hello.log %}
 ```
+
+### Model ConceptMap with links
+
+The trick is adding the `?codesystem` to the source and target canonical URIs and use the FHIR Paths as codes.
+
+```json
+  "group": [
+    {
+      "source": "http://vdzi.nl/fhir/StructureDefinition/Patient2?codesystem",
+      "target": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?codesystem",
+      "element": [
+        {
+          "code": "Patient.name",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+```
+
 
 ### OpenEHR
 

@@ -1,0 +1,25 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "model-mapping-demo",
+  "url": "http://hl7.nl/fhir/zib2-ig/ConceptMap/model-mapping-demo",
+  "name": "Patient core resource to US Core Patient resource",
+  "status": "draft",
+  "experimental": true,
+  "group": [
+    {
+      "source": "http://vdzi.nl/fhir/StructureDefinition/Patient2?codesystem",
+      "target": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?codesystem",
+      "element": [
+        {
+          "code": "Patient2.name",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
