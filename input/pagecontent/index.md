@@ -29,8 +29,8 @@ And this is probably NOT allowed on the HL7 CI Build.
 config.json:
 ```json
 {
-	"script": "scripts/ant-my.xml",
-	"otherScripts" : []
+  "script": "scripts/ant-my.xml",
+  "otherScripts" : []
 }
 ```
 
@@ -78,16 +78,16 @@ The trick is adding the `?codesystem` to the source and target canonical URIs an
   ]
 ```
 
-
 ### OpenEHR
 
 #### OpenEHR Profile Views
 
-To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you need to use a template that is based on `fhir2.base.template`.
+To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you need to use a template that is based on `fhir2.base.template`. N.B. conflicts with `compliesWithProfile`.
 
 #### EViews of all Profiles
 
 * See intro of [Patient EView](StructureDefinition-Patient.html)
+* Now included as 'Formal Views of Profile Content' tab 'openEHR View'
 
 #### OpenEHR ADL Import
  
@@ -97,23 +97,35 @@ To get "OpenEHR View" and "ADL" tabs in "Formal Views of Profile Content" you ne
 </div>
 <br/>
 
-1. Download package.tgz from https://build.fhir.org/ig/FHIR/openehr-base-ig/index.html
-2. Extract in ~/.fhir/packages/openehr.base#current
-3. DependOn http://openehr.org/fhir/ImplementationGuide/openehr.base
-4. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
+1. Download ADL 2.0 from [CKM](https://ckm.openehr.org/)
     * n.b. file-extensie `.adl`
     * and place in input/archetypes
-5. ~~[9-apr-2025] Somewhere after FHIR IG Publisher Version 1.8.13 and before v1.8.23 ADL import was disabled~~
+2. ~~[9-apr-2025] Somewhere after FHIR IG Publisher Version 1.8.13 and before v1.8.23 ADL import was disabled~~
     * ~~Added output json in input/resources/StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.json~~
     * ~~Resulting Logical Model: [StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1](StructureDefinition-openEHR-EHR-EVALUATION.problem-diagnosis.v1.4.1.html)~~
-6. [3-jun-2025] During OpenEHR/HL7 Joint meeting IG Publisher Version 2.0.4 includes ADL support again.
-7. Set http://hl7.org/fhir/tools/CodeSystem/ig-parameters#openehr to true
+3. [3-jun-2025] During OpenEHR/HL7 Joint meeting IG Publisher Version 2.0.4 includes ADL support again.
 
-```xml
-    <parameter>
-      <code value="openehr"/>
-      <value value="true"/>
-    </parameter>
+And add the following to the ImplementationGuide resource:
+```json
+    "dependsOn": [
+      {
+        "id": "openEHRbase",
+        "uri": "http://openehr.org/fhir/ImplementationGuide/openehr.base",
+        "packageId": "openehr.base",
+        "version": "dev"
+      }
+    ]
+    ...
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/archetypes"
+      },
+      {
+        "code": "openehr",
+        "value": "true"
+      }
+    ]
 ```
 
 ## compliesWithProfile (multiple versions of the same dependsOn IG)
@@ -130,12 +142,16 @@ This was a work around for a version handling "bug" in the IG publisher. us-core
 And add the following to the ImplementationGuide resource:
 ```json
 "definition": {
-    "extension": [
-        {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
-            "valueCode": "hl7.fhir.us.core#6.1.0"
-        }
-    ]
+  "extension": [
+    {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+        "valueCode": "hl7.fhir.us.core#6.1.0"
+    },
+    {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+        "valueCode": "hl7.fhir.us.core#7.0.0"
+    }
+  ]
 }
 ```
 
@@ -143,19 +159,23 @@ And add the following to the ImplementationGuide resource:
 
 <div class="dragon" markdown="1">
 * You need IG Publisher 2.0.? for npm package aliasing.
+* Template should be `fhir.base.template` based. `fhir2.base.template` looks to not support package aliassing; throws Exception on packageId already defined.
 </div>
 
-This makes the link work and resolves the QA error.
+This makes the compliesWithProfile links work and resolves the QA error.
 
 [Zulip:NPM Aliases](https://chat.fhir.org/#narrow/channel/179239-tooling/topic/NPM.20Aliases/with/517985527)
 
 And add the following to the ImplementationGuide resource:
-```xml
-  <dependsOn id="uscore6">
-    <packageId value="v610@npm:hl7.fhir.us.core"/>
-    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
-    <version value="6.1.0"/>
-  </dependsOn>
+```json
+"dependsOn": [
+  {
+    "id": "uscore6",
+    "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+    "packageId": "v610@npm:hl7.fhir.us.core",
+    "version": "6.1.0"
+  }
+]
 ```
 
 ## Color/Grayscale toggle

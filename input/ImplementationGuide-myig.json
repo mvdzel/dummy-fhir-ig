@@ -1,0 +1,95 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "dummy.vdzi.nl",
+  "language": "en",
+  "url": "http://vdzi.nl/fhir/ImplementationGuide/dummy.vdzi.nl",
+  "version": "0.4.0",
+  "name": "DummyIG",
+  "title": "Dummy IG",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-01-20T19:22:24+00:00",
+  "publisher": "Michael van der Zel",
+  "description": "This Dummy IG is my sandbox to try out IG Publisher features and issues.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "packageId": "dummy.vdzi.nl",
+  "license": "CC0-1.0",
+  "fhirVersion": [ "4.0.1"],
+  "dependsOn": [
+    {
+      "id": "openEHRbase",
+      "uri": "http://openehr.org/fhir/ImplementationGuide/openehr.base",
+      "packageId": "openehr.base",
+      "version": "dev"
+    },
+    {
+      "id": "uscore5",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "5.0.1"
+    }
+  ],
+  "definition": {
+    "extension": [
+      {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+          "valueCode": "hl7.fhir.us.core#3.1.1"
+      },
+      {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+          "valueCode": "hl7.fhir.us.core#6.1.0"
+      },
+      {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency",
+          "valueCode": "hl7.fhir.us.core#7.0.0"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "MyIG Home Page",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "find-other-resources",
+        "value": "true"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "resources/Parameters-exp-params.json"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/archetypes"
+      },
+      {
+        "code": "openehr",
+        "value": "true"
+      }
+    ]
+  }
+}

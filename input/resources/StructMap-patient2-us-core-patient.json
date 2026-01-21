@@ -2,7 +2,8 @@
   "resourceType": "StructureMap",
   "id": "patient2-us-core-patient",
   "url": "http://vdzi.nl/fhir/StructureMap/patient2-us-core-patient",
-  "name": "Patient file #2",
+  "name": "PatientFile2uscorepatient",
+  "title": "Patient file #2 to us-core-patient",
   "status": "draft",
   "structure": [
     {

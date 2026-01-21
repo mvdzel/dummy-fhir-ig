@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "model-mapping-demo",
-  "url": "http://hl7.nl/fhir/zib2-ig/ConceptMap/model-mapping-demo",
+  "url": "http://vdzi.nl/fhir/ConceptMap/model-mapping-demo",
   "name": "Patient core resource to US Core Patient resource",
   "status": "draft",
   "experimental": true,

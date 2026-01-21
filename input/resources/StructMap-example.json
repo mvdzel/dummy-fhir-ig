@@ -2,7 +2,8 @@
   "resourceType": "StructureMap",
   "id": "patient-transform",
   "url": "http://vdzi.nl/fhir/StructureMap/patient-transform",
-  "name": "Patient to Patient",
+  "name": "Patient2uscorepatient",
+  "title": "Patient to us-core-patient",
   "status": "draft",
   "structure": [
     {
