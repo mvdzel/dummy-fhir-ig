@@ -1,0 +1,10 @@
+
+# A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: ImplementationGuide.name
+msgid "DummyIG"
+msgstr "NepIG"
+
+# A short, descriptive, user-friendly title for the implementation guide.
+#: ImplementationGuide.title
+msgid "Dummy IG"
+msgstr "Nep Implementatie Gids"

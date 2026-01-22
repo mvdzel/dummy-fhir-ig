@@ -24,9 +24,9 @@ will enable [History tab](StructureDefinition-Patient.profile.history.html)
 The IG Publisher first runs sushi and then ant.
 Have not found a good way to call something before sushi runs.
 Added in my-template/config.json -> ant-my.xml that will exec script.sh after sushi runs.
-And this is probably NOT allowed on the HL7 CI Build.
+N.B. This is NOT allowed on the HL7 CI Build server, so you have to run this in your own GH Action.
 
-config.json:
+my-template/config.json:
 ```json
 {
   "script": "scripts/ant-my.xml",
@@ -77,6 +77,30 @@ The trick is adding the `?codesystem` to the source and target canonical URIs an
     }
   ]
 ```
+
+### Translations
+
+* IG-Guidance: https://build.fhir.org/ig/FHIR/ig-guidance/languages.html (outdated)
+* Current Example: https://github.com/uzinfocom-org/digital-health-ig
+
+And add the following to the ImplementationGuide resource:
+```json
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "nl"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/nl"
+      }
+```
+
+The IG Publisher generates the empty translations files in the translations folder. 
+You can use that to populate the input/translations/nl folder.
 
 ### OpenEHR
 

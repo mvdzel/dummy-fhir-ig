@@ -89,6 +89,18 @@
       {
         "code": "openehr",
         "value": "true"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "nl"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/nl"
       }
     ]
   }

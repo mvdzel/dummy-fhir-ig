@@ -2,6 +2,7 @@ output
 template
 input-cache
 temp
+translations
 .index*
 *.log
 .fhir
