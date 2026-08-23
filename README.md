@@ -18,8 +18,6 @@
 @> sudo apt-get install jekyll graphviz wget
 @> npm install -g http-server
 @> ./_updatePublisher.sh
-@> ./setup-openehr.sh
-@> npm install -g @google/gemini-cli
 ```
 
 ## Build
