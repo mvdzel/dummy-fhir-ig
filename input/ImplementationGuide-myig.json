@@ -29,7 +29,7 @@
       "id": "openEHRbase",
       "uri": "http://openehr.org/fhir/ImplementationGuide/openehr.base",
       "packageId": "openehr.base",
-      "version": "dev"
+      "version": "0.1.0-snapshot"
     },
     {
       "id": "uscore5",
